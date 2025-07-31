@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const objections = {
   price: "The building across the street is offering two months free and is cheaper overall.",
