@@ -1,3 +1,5 @@
+'use client';
+import React, { useState } from 'react';
 export default function TrainingPage() {
   const [selected, setSelected] = useState('price');
   const [response, setResponse] = useState('');
