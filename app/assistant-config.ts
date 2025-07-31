@@ -1,5 +1,7 @@
-export let assistantId = ""; // set your assistant ID here
+const assistantId = process.env.ASSISTANT_ID;
 
-if (assistantId === "") {
-  assistantId = process.env.OPENAI_ASSISTANT_ID;
+if (!assistantId) {
+  throw new Error("Missing Assistant ID — set ASSISTANT_ID in your environment variables.");
 }
+
+export const ASSISTANT_ID = assistantId;
