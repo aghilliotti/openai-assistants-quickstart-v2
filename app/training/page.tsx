@@ -1,5 +1,12 @@
 'use client';
 import React, { useState } from 'react';
+
+const objections = {
+  price: "The building across the street is offering two months free and is cheaper overall.",
+  comparison: "I’ve toured a few places, just want to compare and I’ll circle back.",
+  parking: "I’ve heard parking is a nightmare here — especially for guests.",
+};
+
 export default function TrainingPage() {
   const [selected, setSelected] = useState('price');
   const [response, setResponse] = useState('');
@@ -66,5 +73,3 @@ export default function TrainingPage() {
     </main>
   );
 }
-
-
