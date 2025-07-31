@@ -4,4 +4,4 @@ if (!assistantId) {
   throw new Error("Missing Assistant ID — set ASSISTANT_ID in your environment variables.");
 }
 
-export const ASSISTANT_ID = assistantId;
+export { assistantId };
